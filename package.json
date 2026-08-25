@@ -1,0 +1,30 @@
+{
+  "name": "infrastructure-review-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Design review feature module over a 3D digital-twin viewer: inspect elements, track changes between model versions, create issues with saved viewpoints.",
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --filter viewer dev",
+    "build": "pnpm --filter viewer build",
+    "preview": "pnpm --filter viewer preview",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "pnpm --filter viewer test:e2e",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "jsdom": "^30.1.0",
+    "prettier": "^3",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}
