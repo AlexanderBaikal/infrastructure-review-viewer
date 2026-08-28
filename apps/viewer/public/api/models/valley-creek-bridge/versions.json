@@ -1,0 +1,16 @@
+{
+  "versions": [
+    {
+      "id": "v11",
+      "label": "v11 — Issued for review",
+      "createdAt": "2026-07-30T09:30:00Z",
+      "previousVersionId": null
+    },
+    {
+      "id": "v12",
+      "label": "v12 — Revised after review",
+      "createdAt": "2026-08-18T14:05:00Z",
+      "previousVersionId": "v11"
+    }
+  ]
+}

@@ -1,6 +1,10 @@
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
-import { diffVersions, generateBridge } from '../src/index';
+import { BRIDGE_VERSIONS, MODEL_ID, diffVersions, generateBridge } from '../src/index';
 
+const apiDir = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   '../../../apps/viewer/public/api/models',
   MODEL_ID,
@@ -31,4 +35,12 @@ describe('generateBridge', () => {
     expect(generateBridge('v12')).toEqual(generateBridge('v12'));
   });
 
+  it('matches the committed mock API payloads', async () => {
+    const versions = JSON.parse(await readFile(path.join(apiDir, 'versions.json'), 'utf8')) as { versions: unknown };
+    expect(versions.versions).toEqual(BRIDGE_VERSIONS);
+    for (const versionId of ['v11', 'v12'] as const) {
+      const payload = JSON.parse(await readFile(path.join(apiDir, 'versions', `${versionId}.json`), 'utf8')) as unknown;
+      expect(payload).toEqual(generateBridge(versionId));
+    }
+  });
 });

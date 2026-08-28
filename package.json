@@ -10,12 +10,13 @@
   },
   "scripts": {
     "dev": "pnpm --filter viewer dev",
-    "build": "pnpm --filter viewer build",
+    "build": "pnpm generate:data && pnpm --filter viewer build",
     "preview": "pnpm --filter viewer preview",
     "typecheck": "pnpm -r typecheck",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "pnpm --filter viewer test:e2e",
+    "generate:data": "pnpm --filter @irv/review-core generate",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

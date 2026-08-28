@@ -1,0 +1,497 @@
+{
+  "id": "v12",
+  "label": "v12 — Revised after review",
+  "createdAt": "2026-08-18T14:05:00Z",
+  "previousVersionId": "v11",
+  "elements": [
+    {
+      "id": "A-1",
+      "name": "Abutment A-1",
+      "category": "Abutment",
+      "geometry": {
+        "position": [
+          -50,
+          0,
+          4.5
+        ],
+        "dimensions": [
+          4,
+          12,
+          9
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Reinforced concrete",
+        "Height (m)": 9,
+        "Status": "Approved",
+        "Asset tag": "VCB-A-1",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "A-2",
+      "name": "Abutment A-2",
+      "category": "Abutment",
+      "geometry": {
+        "position": [
+          50,
+          0,
+          4.5
+        ],
+        "dimensions": [
+          4,
+          12,
+          9
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Reinforced concrete",
+        "Height (m)": 9,
+        "Status": "Approved",
+        "Asset tag": "VCB-A-2",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "P-1",
+      "name": "Pier P-1",
+      "category": "Pier",
+      "geometry": {
+        "position": [
+          -24,
+          0,
+          4
+        ],
+        "dimensions": [
+          2,
+          8,
+          8
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Reinforced concrete",
+        "Height (m)": 8,
+        "Status": "Approved",
+        "Asset tag": "VCB-P-1",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "P-2",
+      "name": "Pier P-2",
+      "category": "Pier",
+      "geometry": {
+        "position": [
+          0,
+          0,
+          4
+        ],
+        "dimensions": [
+          2,
+          8,
+          8
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Reinforced concrete",
+        "Height (m)": 8,
+        "Status": "Approved",
+        "Asset tag": "VCB-P-2",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "P-3",
+      "name": "Pier P-3",
+      "category": "Pier",
+      "geometry": {
+        "position": [
+          24,
+          0,
+          4
+        ],
+        "dimensions": [
+          2,
+          8,
+          8
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Reinforced concrete",
+        "Height (m)": 8,
+        "Status": "In review",
+        "Asset tag": "VCB-P-3",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "D-1",
+      "name": "Deck span D-1",
+      "category": "Deck",
+      "geometry": {
+        "position": [
+          -36,
+          0,
+          9.5
+        ],
+        "dimensions": [
+          24,
+          10,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Precast concrete",
+        "Length (m)": 24,
+        "Width (m)": 10,
+        "Status": "Approved",
+        "Asset tag": "VCB-D-1",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "G-1-L",
+      "name": "Girder G-1-L",
+      "category": "Girder",
+      "geometry": {
+        "position": [
+          -36,
+          3,
+          8.5
+        ],
+        "dimensions": [
+          23.6,
+          0.8,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Steel",
+        "Length (m)": 23.6,
+        "Section": "W920x238",
+        "Status": "Approved",
+        "Asset tag": "VCB-G-1-L",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "G-1-R",
+      "name": "Girder G-1-R",
+      "category": "Girder",
+      "geometry": {
+        "position": [
+          -36,
+          -3,
+          8.5
+        ],
+        "dimensions": [
+          23.6,
+          0.8,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Steel",
+        "Length (m)": 23.6,
+        "Section": "W920x238",
+        "Status": "Approved",
+        "Asset tag": "VCB-G-1-R",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "D-2",
+      "name": "Deck span D-2",
+      "category": "Deck",
+      "geometry": {
+        "position": [
+          -12,
+          0,
+          9.5
+        ],
+        "dimensions": [
+          24,
+          10,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Precast concrete",
+        "Length (m)": 24,
+        "Width (m)": 10,
+        "Status": "Approved",
+        "Asset tag": "VCB-D-2",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "G-2-L",
+      "name": "Girder G-2-L",
+      "category": "Girder",
+      "geometry": {
+        "position": [
+          -12,
+          3,
+          8.5
+        ],
+        "dimensions": [
+          23.6,
+          0.8,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Steel",
+        "Length (m)": 23.6,
+        "Section": "W920x238",
+        "Status": "Approved",
+        "Asset tag": "VCB-G-2-L",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "G-2-R",
+      "name": "Girder G-2-R",
+      "category": "Girder",
+      "geometry": {
+        "position": [
+          -12,
+          -3,
+          8.5
+        ],
+        "dimensions": [
+          23.6,
+          0.8,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Steel",
+        "Length (m)": 23.6,
+        "Section": "W920x238",
+        "Status": "Approved",
+        "Asset tag": "VCB-G-2-R",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "D-3",
+      "name": "Deck span D-3",
+      "category": "Deck",
+      "geometry": {
+        "position": [
+          12,
+          0,
+          9.5
+        ],
+        "dimensions": [
+          24,
+          10,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Precast concrete",
+        "Length (m)": 24,
+        "Width (m)": 10,
+        "Status": "Approved",
+        "Asset tag": "VCB-D-3",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "G-3-L",
+      "name": "Girder G-3-L",
+      "category": "Girder",
+      "geometry": {
+        "position": [
+          12,
+          3,
+          8.5
+        ],
+        "dimensions": [
+          23.6,
+          0.8,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Steel",
+        "Length (m)": 23.6,
+        "Section": "W920x238",
+        "Status": "Approved",
+        "Asset tag": "VCB-G-3-L",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "G-3-R",
+      "name": "Girder G-3-R",
+      "category": "Girder",
+      "geometry": {
+        "position": [
+          12,
+          -3,
+          8.5
+        ],
+        "dimensions": [
+          23.6,
+          0.8,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Weathering steel",
+        "Length (m)": 23.6,
+        "Section": "W920x238",
+        "Status": "Approved",
+        "Asset tag": "VCB-G-3-R",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "D-4",
+      "name": "Deck span D-4",
+      "category": "Deck",
+      "geometry": {
+        "position": [
+          36,
+          0,
+          9.5
+        ],
+        "dimensions": [
+          24,
+          10,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Precast concrete",
+        "Length (m)": 24,
+        "Width (m)": 10,
+        "Status": "Approved",
+        "Asset tag": "VCB-D-4",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "G-4-L",
+      "name": "Girder G-4-L",
+      "category": "Girder",
+      "geometry": {
+        "position": [
+          36,
+          3,
+          8.5
+        ],
+        "dimensions": [
+          23.6,
+          0.8,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Steel",
+        "Length (m)": 23.6,
+        "Section": "W920x238",
+        "Status": "Approved",
+        "Asset tag": "VCB-G-4-L",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "G-4-R",
+      "name": "Girder G-4-R",
+      "category": "Girder",
+      "geometry": {
+        "position": [
+          36,
+          -3,
+          8.5
+        ],
+        "dimensions": [
+          23.6,
+          0.8,
+          1
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Steel",
+        "Length (m)": 23.6,
+        "Section": "W920x238",
+        "Status": "Approved",
+        "Asset tag": "VCB-G-4-R",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "L-1",
+      "name": "Lighting column L-1",
+      "category": "Lighting",
+      "geometry": {
+        "position": [
+          -12,
+          5.5,
+          14
+        ],
+        "dimensions": [
+          0.4,
+          0.4,
+          8
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Galvanised steel",
+        "Height (m)": 8,
+        "Luminaire": "LED 120 W",
+        "Status": "In review",
+        "Asset tag": "VCB-L-1",
+        "Last inspected": "2026-03-14"
+      }
+    },
+    {
+      "id": "L-2",
+      "name": "Lighting column L-2",
+      "category": "Lighting",
+      "geometry": {
+        "position": [
+          12,
+          5.5,
+          14
+        ],
+        "dimensions": [
+          0.4,
+          0.4,
+          8
+        ],
+        "heading": 0
+      },
+      "properties": {
+        "Material": "Galvanised steel",
+        "Height (m)": 8,
+        "Luminaire": "LED 120 W",
+        "Status": "In review",
+        "Asset tag": "VCB-L-2",
+        "Last inspected": "2026-03-14"
+      }
+    }
+  ]
+}
