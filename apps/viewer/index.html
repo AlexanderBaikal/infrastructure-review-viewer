@@ -12,6 +12,10 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- cesium looks up its workers here; %BASE_URL% is filled in by vite -->
+    <script>
+      window.CESIUM_BASE_URL = '%BASE_URL%cesium/';
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

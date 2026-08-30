@@ -4,7 +4,7 @@ import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import { defineConfig, type Plugin } from 'vite';
 
-// VITE_BASE is set by CI for GitHub Pages
+// VITE_BASE is set by CI for GitHub Pages; index.html derives CESIUM_BASE_URL from it
 const base = process.env.VITE_BASE ?? '/';
 
 const CESIUM_PUBLIC_DIR = 'cesium';
@@ -64,7 +64,6 @@ function cesiumStaticAssets(): Plugin {
 export default defineConfig({
   base,
   plugins: [react(), cesiumStaticAssets()],
-  define: { CESIUM_BASE_URL: JSON.stringify(`${base}${CESIUM_PUBLIC_DIR}/`) },
   build: {
     chunkSizeWarningLimit: 6000,
     sourcemap: false,
