@@ -208,6 +208,7 @@ export class CesiumViewerAdapter implements ViewerAdapter {
 
   onCameraChanged(handler: CameraHandler): () => void {
     this.cameraHandlers.add(handler);
+    if (this.viewer) handler(this.getCamera());
     return () => this.cameraHandlers.delete(handler);
   }
 

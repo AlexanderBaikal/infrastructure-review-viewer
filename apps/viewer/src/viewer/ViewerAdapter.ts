@@ -18,6 +18,7 @@ export interface ViewerAdapter {
   zoomTo(elementId: ElementId): Promise<void>;
   resetView(): Promise<void>;
   onPick(handler: PickHandler): () => void;
+  // while mounted the handler is also called right away with the current camera
   onCameraChanged(handler: CameraHandler): () => void;
 }
 

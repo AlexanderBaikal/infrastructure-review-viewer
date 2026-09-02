@@ -14,6 +14,10 @@ export function ViewerCanvas({ adapter, scene, onPick, onCameraChanged, children
   const containerRef = useRef<HTMLDivElement>(null);
   const [error, setError] = useState<string | null>(null);
 
+  // subscribe before mount, otherwise the initial camera state is missed
+  useEffect(() => adapter.onPick(onPick), [adapter, onPick]);
+  useEffect(() => adapter.onCameraChanged(onCameraChanged), [adapter, onCameraChanged]);
+
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return undefined;
@@ -26,9 +30,6 @@ export function ViewerCanvas({ adapter, scene, onPick, onCameraChanged, children
     }
     return () => adapter.dispose();
   }, [adapter]);
-
-  useEffect(() => adapter.onPick(onPick), [adapter, onPick]);
-  useEffect(() => adapter.onCameraChanged(onCameraChanged), [adapter, onCameraChanged]);
   useEffect(() => {
     adapter.setScene(scene);
   }, [adapter, scene]);

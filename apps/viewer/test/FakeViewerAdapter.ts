@@ -53,6 +53,7 @@ export class FakeViewerAdapter implements ViewerAdapter {
 
   onCameraChanged(handler: CameraHandler): () => void {
     this.cameraHandlers.add(handler);
+    if (this.mounted) handler(this.camera);
     return () => this.cameraHandlers.delete(handler);
   }
 
