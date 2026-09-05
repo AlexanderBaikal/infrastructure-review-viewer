@@ -4,7 +4,7 @@ Small design-review app on top of a 3D viewer (CesiumJS): pick an element, see i
 
 Live: https://alexanderbaikal.github.io/infrastructure-review-viewer/ &nbsp; [![CI](https://github.com/AlexanderBaikal/infrastructure-review-viewer/actions/workflows/ci.yml/badge.svg)](https://github.com/AlexanderBaikal/infrastructure-review-viewer/actions/workflows/ci.yml)
 
-![screenshot](docs/screenshot.png)
+![walkthrough](docs/review-workflow.gif)
 
 ## What it does
 

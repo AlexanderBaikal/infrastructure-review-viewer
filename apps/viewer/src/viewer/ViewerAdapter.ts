@@ -48,5 +48,5 @@ export function lookAt(eye: Vec3, target: Vec3): CameraState {
   };
 }
 
-// home view: south-west of the bridge, elevated
-export const HOME_CAMERA: CameraState = lookAt({ x: -118, y: -98, z: 58 }, { x: 0, y: 0, z: 6 });
+// home view: from the south, slightly elevated
+export const HOME_CAMERA: CameraState = lookAt({ x: -48, y: -104, z: 42 }, { x: 0, y: 0, z: 4 });
